@@ -1,0 +1,187 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (P.R.C.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#include ""res\\SocketDemo.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""     // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\SocketDemo.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_SOCKETDEMO_DIALOG DIALOGEX 0, 0, 331, 272
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "SocketDemo"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    LTEXT           "Port:",IDC_STATIC,25,13,17,8
+    EDITTEXT        IDC_EDIT_PORT,47,10,40,14,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "IP:",IDC_STATIC,96,13,10,8
+    CONTROL         "",IDC_IPADDRESS,"SysIPAddress32",WS_TABSTOP,111,10,100,15
+    LTEXT           "Message:",IDC_STATIC,10,32,32,8
+    EDITTEXT        IDC_EDIT_MEG,47,30,164,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "Send Message",IDC_BUTTON_SEND,220,10,99,34
+    PUSHBUTTON      "Browse",IDC_BUTTON2,213,199,98,18
+    EDITTEXT        IDC_EDIT_PATH,46,200,163,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "0%",IDC_STATIC_LOAD,45,226,266,8
+    LTEXT           "File:",IDC_STATIC,26,203,14,8
+    LTEXT           "Send:",IDC_STATIC,20,226,20,8
+    LTEXT           "0%",IDC_STATIC_LOAD2,45,246,266,8
+    LTEXT           "Recv:",IDC_STATIC,20,246,20,8
+    EDITTEXT        IDC_EDIT_RECV,20,100,291,74,ES_MULTILINE | ES_AUTOVSCROLL | WS_VSCROLL
+    GROUPBOX        "FileSocket",IDC_STATIC,7,185,317,80
+    EDITTEXT        IDC_EDIT_ID,47,60,65,14,ES_AUTOHSCROLL
+    LTEXT           "id£º",IDC_STATIC,28,62,14,8
+    GROUPBOX        "Send Struct",IDC_STATIC,7,49,317,47
+    LTEXT           "Message:",IDC_STATIC,10,81,32,8
+    EDITTEXT        IDC_EDIT_MEG2,47,79,164,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "Send Message",IDC_BUTTON_SEND2,220,58,99,34
+    LTEXT           "Port:",IDC_STATIC,138,63,17,8
+    EDITTEXT        IDC_EDIT_PORT2,160,60,51,14,ES_AUTOHSCROLL | ES_NUMBER
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_SOCKETDEMO_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 324
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 265
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x17L
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404b0"
+        BEGIN
+            VALUE "FileDescription", "SocketDe Application"
+            VALUE "FileVersion", "1, 0, 0, 1"
+            VALUE "InternalName", "SocketDe"
+            VALUE "LegalCopyright", "Copyright (C) 2014"
+            VALUE "OriginalFilename", "SocketDe.exe"
+            VALUE "ProductName", " SocketDe Application"
+            VALUE "ProductVersion", "1, 0, 0, 1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+#endif    // Chinese (P.R.C.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+LANGUAGE 4, 2
+#pragma code_page(936)
+#include "res\SocketDemo.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"     // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
